@@ -1,0 +1,37 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~font-awesome/css/font-awesome.css';
+@import './scss/_theme';
+
+html, body, main {
+    min-height: 100%;
+}
+
+body {
+    margin: 0px;
+}
+
+/* Garante que todas as imagens, videos e conteúdos embedados fiquem com a 
+   largura máxima de 100% do tamanho original*/
+   img,
+   picture,
+   video,
+   embed {
+      max-width: 100%;
+   }
+
+   
+
+/*Basicamente esta regra diz que todos os elementos agora levarão em conta 
+  apenas a largura e altura determinada, sem somar a este valor a borda e 
+  o padding*/
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+footer {
+    clear: both;
+    position: relative;
+    top: 0px;
+}

@@ -1,0 +1,6 @@
+<div class="col-12">
+    <button type="button" class="btn btn-primary btn-circle btn-sm my-1" id="add_more_B" (click)="addClick()" [disabled]="!addEnabled">
+        <i class="fa fa-plus "></i><span *ngIf="addLabel" class="mr-1">{{addLabel}}</span></button>
+    <button type="button" class="btn btn-default btn-circle btn-sm my-1" id="remove_more_B" (click)="deleteClick()" [disabled]="!deleteEnabled">
+        <i class="fa fa-trash"></i><span *ngIf="removeLabel" class="mr-1">{{removeLabel}}</span></button>
+</div>

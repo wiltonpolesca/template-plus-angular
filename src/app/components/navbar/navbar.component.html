@@ -1,0 +1,70 @@
+<nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom">
+  <div class="container">
+    <a class="navbar-brand mr-lg-4" routerLink="/">
+      <img alt="image" src="./assets/img/logo-white.png">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global"
+      aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation"
+      (click)="isCollapsed = !isCollapsed">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse" id="navbar_global" [collapse]=isCollapsed>
+      <div class="navbar-collapse-header">
+        <div class="row">
+          <div class="col-6 collapse-brand">
+            <a routerLink="/">
+              <img alt="image" src="./assets/img/logo-color.png">
+            </a>
+          </div>
+          <div class="col-6 collapse-close">
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar_global"
+              aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
+        <li class="nav-item">
+          <a routerLink="/home" fragment="secaoComoFunciona" class="nav-link">
+            <span class="nav-link-inner--text">Como Funciona</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/home" fragment="secaoRecursos" class="nav-link">
+            <span class="nav-link-inner--text">Recursos</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/home" fragment="secaoManar" class="nav-link">
+            <span class="nav-link-inner--text">Manar RH</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/home" fragment="secaoContato" class="nav-link">
+            <span class="nav-link-inner--text">Contato</span>
+          </a>
+        </li>
+      </ul>
+      <ul class="navbar-nav navbar-nav__action-btn align-items-lg-center ml-lg-auto">
+        <li class="nav-item">
+          <a routerLink="/login" class="btn btn-outline-white btn-icon">
+            <span class="btn-inner--icon">
+              <i class="fa fa-user-circle mr-1"></i>
+            </span>
+            <span class="nav-link-inner--text">Entrar</span>
+          </a>
+        </li>
+        <li class="nav-item d-none d-lg-block">
+          <a routerLink="/registry" class="btn btn-neutral btn-icon">
+            <span class="btn-inner--icon">
+              <i class="fa fa-check-circle mr-1"></i>
+            </span>
+            <span class="nav-link-inner--text">Iniciar Teste Grátis</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

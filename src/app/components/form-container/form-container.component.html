@@ -1,0 +1,14 @@
+<section class="section section-shaped section-lg bg-texture-light">
+    <div class="shape shape-style-1 shape-primary"></div>
+    <div class="container py-lg-md">
+        <div class="row justify-content-center">
+
+            <div class="formQuery">
+                <h2 *ngIf="title" class="text-white text-uppercase text-center font-weight-300 mb-4">{{title}}</h2>
+                <div class="card bg-secondary shadow border-0">
+                <ng-content></ng-content>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,37 @@
+<div class="row" [formGroup]="parentForm">
+    <div class="col-lg-4">
+        <div class="form-group mb-3">
+            <label for="Empresa">Empresa</label>
+            <div class="input-group input-group-alternative">
+                <input class="form-control" placeholder="Empresa" type="text"  formControlName="company">
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="form-group mb-3">
+            <label for="Posição">Posição</label>
+            <div class="input-group input-group-alternative">
+                <input class="form-control" placeholder="Posição" type="text" formControlName="title">
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="form-group mb-3">
+            <label for="Período">Período</label>
+            <div class="input-group input-daterange input-group-alternative align-items-center datepicker">
+                <input type="text" class="form-control px-3" placeholder="Início" formControlName="startDate">
+                <div class="input-group-addon">a</div>
+                <input type="text" class="form-control px-3" placeholder="Fim" formControlName="endDate">
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-12">
+        <div class="form-group mb-3">
+            <label for="Realizações">Principais Realizações</label>
+            <div class="input-group input-group-alternative">
+                <textarea class="form-control" placeholder="Descreva suas principais realizações na empresa..."
+                    rows="3" formControlName="description"></textarea>
+            </div>
+        </div>
+    </div>
+</div>
